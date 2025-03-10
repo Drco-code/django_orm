@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #2575fc;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.rating-form p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.rating-form input,
+.rating-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f4f4f4;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.rating-form input:focus,
+.rating-form select:focus {
+    border-color: #2575fc;
+    background: #fff;
+}
+
+.submit-btn {
+    background: #2575fc;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #6a11cb;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    background: #4a7dff;
+    transform: translateY(2px);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .form-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .form-title {
+        font-size: 1.5em;
+    }
+
+    .rating-form input,
+    .rating-form select {
+        padding: 10px;
+    }
+
+    .submit-btn {
+        padding: 10px 20px;
+    }
+}
