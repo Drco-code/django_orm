@@ -1,113 +1,118 @@
-📚 Django ORM Learning Project
+# 📚 Django ORM Learning Project
 
-Welcome to the Django ORM Learning Project! This repository is dedicated to mastering Django's Object-Relational Mapping (ORM), which allows developers to interact with databases using Python instead of raw SQL.
+Welcome to the Django ORM Learning Project! This repository is dedicated to mastering **Django's Object-Relational Mapping (ORM)**, which allows developers to interact with databases using Python instead of raw SQL.  
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 Django ORM provides a powerful abstraction layer over databases, making data handling more efficient and readable. This project covers:
 
-🏗️ Defining models and migrations
+* 🏗️ Defining models and migrations
 
-🔍 Querying data using ORM
+* 🔍 Querying data using ORM
 
-🔄 Performing CRUD operations
+* 🔄 Performing CRUD operations
 
-🔗 Working with relationships (One-to-One, One-to-Many, Many-to-Many)
+* 🔗 Working with relationships (One-to-One, One-to-Many, Many-to-Many)
 
-📊 Filtering and optimizing queries
+* 📊 Filtering and optimizing queries
 
-🖥️ Using the Django shell for database interaction
+* 🖥️ Using the Django shell for database interaction
 
-⚡ Getting Started
+* ⚡ Getting Started
+  <br>
 
-🔹 Clone the Repository
+---
+### 🔹 Clone the Repository
 
-git clone https://github.com/your-username/django_orm.git
+    git clone https://github.com/your-username/django_orm.git
 
-  cd django_orm
+    cd django_orm
 
-🔹 Set Up a Virtual Environment
+### 🔹 Set Up a Virtual Environment
 
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate    # Windows
+    python -m venv venv
 
-🔹 Install Dependencies
+    source venv/bin/activate  # Mac/Linux
 
-pip install -r requirements.txt
+    venv\Scripts\activate    # Windows
 
-🔹 Apply Migrations
+### 🔹 Install Dependencies
 
-python manage.py makemigrations
-python manage.py migrate
+    pip install -r requirements.txt
 
-🔹 Create a Superuser (Optional for Admin Panel)
+### 🔹 Apply Migrations
 
-python manage.py createsuperuser
+    python manage.py makemigrations
 
-🔹 Run the Development Server
+    python manage.py migrate
 
-python manage.py runserver
+### 🔹 Create a Superuser (Optional for Admin Panel)
 
-Visit http://127.0.0.1:8000/admin/ to access the Django Admin Panel.
+    python manage.py createsuperuser
 
-🛠️ Working with Django ORM
+### 🔹 Run the Development Server
 
-🔹 Create a New Record
+    python manage.py runserver
 
-from app.models import Book
-book = Book.objects.create(title="Django for Beginners", author="William S. Vincent", published_date="2023-01-15")
+> Visit http://127.0.0.1:8000/admin/ to access the Django Admin Panel.  
+<br>
+---
 
-🔹 Retrieve All Records
+## 🛠️ Working with Django ORM
 
-books = Book.objects.all()
+### 🔹 Create a New Record
 
-🔹 Filter Records
+    from app.models import Book
+    book = Book.objects.create(title="Django for Beginners", author="William S. Vincent", published_date="2023-01-15")
 
-django_books = Book.objects.filter(author="William S. Vincent")
+### 🔹 Retrieve All Records
 
-🔹 Update a Record
+    books = Book.objects.all()
 
-restaurant = Restaurant.objects.get(id=1)
-book.title = "Django Advanced"
-book.save()
+### 🔹 Filter Records
 
-🔹 Delete a Record
+    django_books = Book.objects.filter(author="William S. Vincent")
 
-book = Book.objects.get(id=1)
-book.delete()
+### 🔹 Update a Record
 
-🔄 Handling Migrations & Data Backup
+    restaurant = Restaurant.objects.get(id=1)
+    book.title = "Django Advanced"
+    book.save()
 
-🔹 Export Database Data
+### 🔹 Delete a Record
 
-python manage.py dumpdata --exclude auth.permission --exclude contenttypes > data.json
+    book = Book.objects.get(id=1)
+    book.delete()
 
-🔹 Import Data After Cloning
+## 🔄 Handling Migrations & Data Backup
 
-python manage.py loaddata data.json
+### 🔹 Export Database Data
 
-🔥 Git Best Practices for This Project
+    python manage.py dumpdata --exclude auth.permission --exclude contenttypes > data.json
 
-🔹 Ignore Database Files
+### 🔹 Import Data After Cloning
 
-Add this to .gitignore:
+    python manage.py loaddata data.json   
 
-# Ignore database file
-db.sqlite3
+## Ignore database file
 
-🔹 Push Changes to GitHub
+> My SQL
 
-git add .
-git commit -m "Updated models and migrations"
-git push origin main
+### 🔹 Push Changes to GitHub
 
-🤝 Contributing
+    git add .
+    git commit -m "Updated models and migrations"
+    git push origin main
+
+### 🤝 Contributing
 
 If you have improvements, feel free to fork the repository, create a new branch, and submit a pull request!
 
-📜 License
+### 📜 License
 
 This project is open-source.
 
 Happy coding! 🚀
+
+---
+**Author:** Derrick Oware  
